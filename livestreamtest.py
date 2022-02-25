@@ -14,7 +14,7 @@ def filter_raw_message(text):
         found2 = re.search('"p":(.+?"}"])}', text).group(1)
         print(found)
         print(found2)
-        return found1, found2
+        return found, found2
     except AttributeError:
         print("error")
     
